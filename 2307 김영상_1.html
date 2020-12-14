@@ -1,0 +1,170 @@
+<!-- // 2307 김영상 // -->
+<html>
+    <head>
+        <title>필기 정리 페이지</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>정보처리기능사 2급 정리</h1>
+            <nav>
+                <span><a href="./2307 김영상_1.html" class="clear here">필기</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a href="./2307 김영상_2.html" class="clear">실기1</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a href="./2307 김영상_3.html" class="clear">실기2</a></span>&nbsp;&nbsp;
+            </nav>
+        </header>
+        
+        <h1 class="page_title">필기 정리 페이지</h1>
+        <h3 class="title">OSI 7계층</h3>
+        <table>
+            <thead>
+                <tr>
+                <th>계층</th>
+                <th>역할</th>
+                <th>데이터명</th>
+                <th>프로토콜</th>
+                <th>기기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>응용</td>
+                    <td>인터페이스</td>
+                    <td rowspan="3" style="border: 1px solid #dddddd; background-color: #dddddd;">메세지</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>표현</td>
+                    <td>인코딩/디코딩/MIME</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>세션</td>
+                    <td>연결 지속</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="imp-row">
+                    <td>전송</td>
+                    <td>헤더 + 송수신 포트 번호</td>
+                    <td>세그먼트<br>데이터그램</td>
+                    <td>TCP<br>UDP</td>
+                    <td>게이트웨이</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>네트워크</td>
+                    <td>주소, 경로, 패킷전달</td>
+                    <td>패킷</td>
+                    <td>IP,RIP,(R)ARP,ICMP,IGMP...</td>
+                    <td>라우터</td>
+                </tr>
+                <tr>
+                    <td>데이터링크</td>
+                    <td>오류감지, 흐름제어</td>
+                    <td>프레임</td>
+                    <td>Ethernet..</td>
+                    <td>브릿지, 스위치</td>
+                </tr>
+                <tr>
+                    <td>물리</td>
+                    <td>데이터 0, 1 전송</td>
+                    <td>비트</td>
+                    <td>RS-232..</td>
+                    <td>허브, 리피터</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p class="important bold">주의사항!!</p>
+        <p class="bold">IP: 비신뢰성, 비연결형, 데이터그램</p>
+        <p>QoS (Quality of Service): <span class="green bold">전송에서 요청</span> -> <span class="red bold">네트워크에서 apply</span></p>
+        <p>=> 엄격하게는 네트워크 계층에서도 흐름제어가 있음.</p>
+        <br>
+
+        <h3 class="title">주요 포트</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>포트번호</th>
+                    <th>프로토콜</th>
+                    <th>TCP/UDP</th>
+                    <th>세부 사항</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20</td>
+                    <td>FTP</td>
+                    <td>TCP</td>
+                    <td>파일 전송</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>21</td>
+                    <td>FTP 제어</td>
+                    <td>TCP</td>
+                    <td>파일 전송</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>22</td>
+                    <td>SSH</td>
+                    <td>TCP</td>
+                    <td>리눅스 쉘</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>TelNet</td>
+                    <td>TCP</td>
+                    <td>텔넷, 비암호화 텍스트 통신</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>SMTP</td>
+                    <td>TCP</td>
+                    <td>메일 전송</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>53</td>
+                    <td>DNS</td>
+                    <td>TCP/UDP</td>
+                    <td>Domain Name Server</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>80</td>
+                    <td>HTTP</td>
+                    <td>TCP/UDP</td>
+                    <td>웹 프로토콜</td>
+                </tr>
+                <tr>
+                    <td>443</td>
+                    <td>HTTPS</td>
+                    <td>TCP</td>
+                    <td>보안 웹 프로토콜</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        
+        <h3 class="title">주요 명령어</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>명령어</th>
+                    <th>내용</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tracert</td>
+                    <td>목적지까지 라우팅할때 라우터 정보</td>
+                </tr>
+                <tr>
+                    <td>netstat</td>
+                    <td>내 컴퓨터의 네트워크 (ex. 열린 포트 찾을 때)</td>
+                </tr>
+            </tbody>
+        </table>
+        <author>제작자: 2307 김영상</author>
+    </body>
+</html>

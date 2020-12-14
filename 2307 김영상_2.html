@@ -1,0 +1,91 @@
+<!-- // 2307 김영상 // -->
+<html>
+    <head>
+        <title>실기1 정리 페이지</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>정보처리기능사 2급 정리</h1>
+            <nav>
+                <span><a href="./2307 김영상_1.html" class="clear">필기</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a href="./2307 김영상_2.html" class="clear here">실기1</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a href="./2307 김영상_3.html" class="clear">실기2</a></span>&nbsp;&nbsp;
+            </nav>
+        </header>
+        
+        <h1 class="page_title">윈도우 서버 정리 페이지</h1>
+        <br>
+        <div class="list">
+            <p>목차</p>
+            <ul>
+                <li><a href="#ip">1. IP 주소 설정</a></li>
+                <li><a href="#dhcp">2. DHCP 주소 설정</a></li>
+                <li><a href="#iis">3. 웹 서버 (IIS) 설정</a></li>
+                <li><a href="#dns">4. 도메인 네임 서버 (DNS) 설정</a></li>
+            </ul>
+        </div>
+
+
+        <h3 class="title" id="ip">1. IP 주소 설정</h3>
+        <img src="./images/IMG_1.PNG" class="width_fix" alt="IP 주소 설정 화면">
+        <br><br>
+        <p>이 부분은 딱히 어렵지 않게 풀 수 있다.</p>
+        <p class="bold">단, 아래와 같이 비트수로 나올때만 주의해주면 된다</p>
+        <div class="block">
+            <p>IP Address : 10101100.00010000.10010110.01110011</p>
+            <p>Subnet Mask : 22 bit</p>
+        </div>
+        <br><br>
+
+        <h3 class="title" id="dhcp">2. DHCP 주소 설정</h3>
+        <img src="./images/IMG_2.PNG" class="width_fix" alt="DHCP 주소 설정 화면">
+        <br><br>
+        <p><span class="bold">IPv4 에서 오른쪽 마우스 클릭 > [새 범위(P)] 클릭 후</span> 제시문 대로 설정</p>
+        <br><br>
+
+        <h3 class="title" id="iis">3. 웹 서버 (IIS) 설정</h3>
+        <img src="./images/IMG_3.PNG" class="width_fix" alt="IIS 설정 화면">
+        <br><br>
+        <p>사이트 제작시 <span class="bold">[사이트] 에서 오른쪽 마우스 클릭 > [웹 사이트 추가] 클릭 후</span> 제시문 대로 설정</p>
+        <br><br>
+        <img src="./images/IMG_4.PNG" class="width_fix" style="width: 430px;" alt="IIS 설정 화면">
+        <br><br>
+        <p>웹 사이트는 위 사진과 같이 설정하면 된다. (난이도: 하)</p>
+        <br><br>
+
+        <h3 class="title" id="dns">4. 도메인 네임 서버 (DNS) 설정</h3>
+        <img src="./images/IMG_5-1.PNG" class="width_fix" alt="DNS 주소 설정 화면">
+        <br><br>
+        <p>문제가 위와 같을때 제시문 대로 설정하면 된다.</p>
+        <br><br>
+        <img src="./images/IMG_5.PNG" class="width_fix" style="width: 430px;" alt="DNS 주소 설정 화면 1">
+        <br><br>
+        <p><span class="bold">정방향에 경우 [정방향 조회 영역] 에서 오른쪽 마우스 클릭 > [새 영역(Z)] 클릭 후</span> 제시문 대로 설정</p>
+        <p class="red bold">주의. 정방향(A,CNAME 등..), 역방향(PTR 등..) 구분 잘하기!</p>
+        <br><br>
+        <img src="./images/IMG_5-2.PNG" class="width_fix" style="width: 430px;" alt="DNS 주소 설정 화면 2">
+        <br><br>
+        <p>영역에 들어가 <span class="bold">마우스 오른쪽 클릭 > [새 호스트..] 혹은 [새 별칭..] 클릭해서 세부설정</span> (난이도: 하)</p>
+        <br><br>
+        <author>제작자: 2307 김영상</author>
+
+        <script type="text/javascript">
+        var imgs = document.querySelectorAll('img');
+        for (var x = 0; x < imgs.length; x++) {
+            imgs.item(x).onclick=function() {
+                var img=new Image();
+                var src=this.src;
+                img.src=src;
+
+                var img_width=img.width;
+                var win_width=img.width+5;
+                var img_height=img.height;
+                var win_height=img.height+5;
+                var OpenWindow=window.open('','_blank', 'width='+win_width+', height='+win_height+', menubars=no, scrollbars=auto');
+                OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+src+"' onclick='self.close();' style='cursor:pointer;'>");
+            };
+        } 
+        </script>
+    </body>
+</html>

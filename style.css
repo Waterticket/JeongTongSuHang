@@ -1,0 +1,142 @@
+body {
+  padding: 13px;
+  padding-top: 95px;
+  background: #f7f7f7;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+.title {
+  font-size: 20px;
+}
+.page_title {
+  font-size: 27px;
+}
+.important {
+  color: red;
+}
+.bold {
+  font-weight: bold;
+}
+.green {
+  color: #009879;
+}
+.red {
+  color: #e74c3c;
+}
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+th,
+td {
+  padding: 12px 15px;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+tbody tr.imp-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 50px;
+  padding: 1rem;
+  color: white;
+  background: teal;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.6em;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.here {
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+.clear {
+  text-decoration: none;
+  color: inherit;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: gray;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+img {
+  max-width: 800px;
+  border: 3px solid rgb(236, 236, 236);
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.block {
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid rgb(220, 220, 220);
+  max-width: 750px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.list {
+  padding: 15px;
+  border: 1px solid rgb(207, 207, 207);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  max-width: 300px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+.list > p {
+  font-size: 19px;
+  padding-left: 5px;
+  padding-top: 6px;
+}
+.list > ul {
+  padding-inline-start: 14px;
+  list-style: none;
+}
+.list a {
+  text-decoration: none !important;
+  color: #3498db;
+}
+author {
+  color: gray;
+  font-size: 17px;
+}

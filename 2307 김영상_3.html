@@ -1,0 +1,106 @@
+<!-- // 2307 김영상 // -->
+<html>
+    <head>
+        <title>실기2 정리 페이지</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>정보처리기능사 2급 정리</h1>
+            <nav>
+                <span><a href="./2307 김영상_1.html" class="clear">필기</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a href="./2307 김영상_2.html" class="clear">실기1</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a href="./2307 김영상_3.html" class="clear here">실기2</a></span>&nbsp;&nbsp;
+            </nav>
+        </header>
+        
+        <h1 class="page_title">라우터/네트워크 정리 페이지</h1>
+        <br>
+        <h3 class="title">라우터 명령어</h3>
+        <table>
+            <thead>
+                <tr>
+                <th>명령어</th>
+                <th>역할</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="imp-row">
+                    <td>enable / en</td>
+                    <td>관리자 모드로 --> Router#</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>configure terminal / conf t</td>
+                    <td>관리자 모드에서 설정모드로 --> Router(config)#</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>copy r s</td>
+                    <td>라우터 셋팅 내용을 NVRAM에 저장</td>
+                </tr>
+                <tr>
+                    <td>hostname [이름]</td>
+                    <td>호스트 이름 명명</td>
+                </tr>
+                <tr>
+                    <td>login</td>
+                    <td>로그인 명령</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>exit</td>
+                    <td>이전 모드로 돌아감 / 종료</td>
+                </tr>
+                <tr>
+                    <td>end</td>
+                    <td>관리자 모드로 돌아감</td>
+                </tr>
+                <tr>
+                    <td>enable password [암호]</td>
+                    <td>관리자모드로 엑세스할 때 암호 설정(암호화되지 않고 저장)</td>
+                </tr>
+                <tr>
+                    <td>enable secret [암호]</td>
+                    <td>관리자모드로 엑세스할 때 암호 설정(암호화되어 저장)</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>erase startup-config</td>
+                    <td>라우터 설정 명령을 지우고 초기화</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>line console 0</td>
+                    <td>콘솔라인 모드 전환 명령</td>
+                </tr>
+                <tr class="imp-row">
+                    <td>line vty</td>
+                    <td>텔넷 등 가상 터미널 전환 명령</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+
+        <h3 class="title">자주 나오는 유형</h3>
+        <div class="block">
+            <p>1) 인터페이스 정보 확인</p>
+            <p>enable - show interface - copy r s</p>
+            <br>
+            <p>2) 접속한 사용자 확인</p>
+            <p>enable - show user(s) - copy r s</p>
+            <br>
+            <p>3) 라우팅 테이블 확인</p>
+            <p>enable - show ip route - copy r s</p>
+            <br>
+            <p>4) 플래쉬 확인</p>
+            <p>enable - show flash - copy r s</p>
+        </div>
+        <div class="block">
+            <p>HostName 수정 예시</p>
+            <br>
+            <p>Router1> en</p>
+            <p>Router# conf t</p>
+            <p>Router1(config)# hostname ICQA</p>
+            <p>ICQA(config)# exit</p>
+            <p>ICQA(config)# copy r s</p>
+        </div>
+        <br><br>
+        <author>제작자: 2307 김영상</author>
+    </body>
+</html>
